@@ -70,10 +70,8 @@ Security release. A site without an API key no longer accepts requests from othe
 = 2.0.0 =
 **⚠ BREAKING CHANGES**
 * the plugin folder is palasthotel-content-change-observer instead of content-observer. WordPress treats it as a new plugin: install it, deactivate and delete the old one, then activate the new one. Settings, connected sites and modifications stay, as options and tables keep their names.
-* the WP-CLI command is now `wp changecast` instead of `wp content-observer`. Cron jobs that call `wp content-observer notify`, `fetch` or any other subcommand have to be changed to `wp changecast ...`.
 
 **Features**
-* rename the plugin to Changecast (5e19e76)
 * rename the plugin to Palasthotel Content Change Observer (c40e088)
 
 **Bug Fixes**
