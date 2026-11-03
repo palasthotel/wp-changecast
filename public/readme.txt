@@ -1,4 +1,4 @@
-=== Changecast – Content Change Notifications Between Sites ===
+=== Palasthotel Content Change Observer ===
 Contributors: palasthotel, edwardbock, janaeggebrecht
 Donate link: https://palasthotel.de/
 Tags: sync, multisite, content, developer, wp-cli
@@ -13,7 +13,7 @@ Efficiently observe content changes between WordPress instances.
 
 == Description ==
 
-Changecast tells one WordPress site what changed on another. The observed site records modifications - saved and deleted posts, and anything a theme or plugin reports - and the sites observing it receive them and react in their own code, for example to refresh a cached teaser list or a mirrored menu.
+Content Change Observer tells one WordPress site what changed on another. The observed site records modifications - saved and deleted posts, and anything a theme or plugin reports - and the sites observing it receive them and react in their own code, for example to refresh a cached teaser list or a mirrored menu.
 
 The plugin moves no content by itself. It transports the modification (content id, content type, create/update/delete and time); what happens next is up to the `content_observer_on_modifications` action on the observing site.
 
@@ -29,18 +29,18 @@ Typical uses:
 * A central search site re-indexes changed posts and drops deleted ones
 * An archive site stores a copy of every article, so it survives a later deletion
 
-Developer documentation: [github.com/palasthotel/wp-changecast](https://github.com/palasthotel/wp-changecast)
+Developer documentation: [github.com/palasthotel/wp-palasthotel-content-change-observer](https://github.com/palasthotel/wp-palasthotel-content-change-observer)
 
 == External services ==
 
-The plugin only talks to the WordPress sites an administrator connects under Changecast → Manage. It sends them this site's URL, its API key and the list of modifications, and requests theirs. No other service is contacted.
+The plugin only talks to the WordPress sites an administrator connects under Content Change Observer → Manage. It sends them this site's URL, its API key and the list of modifications, and requests theirs. No other service is contacted.
 
 == Installation ==
 
-1. Install the plugin on every site that observes or is observed, from Plugins > Add New or by uploading `changecast.zip`
+1. Install the plugin on every site that observes or is observed, from Plugins > Add New or by uploading `palasthotel-content-change-observer.zip`
 1. Activate it
-1. Enter an API key under Changecast → Settings on each site
-1. Connect the sites under Changecast → Manage
+1. Enter an API key under Content Change Observer → Settings on each site
+1. Connect the sites under Content Change Observer → Manage
 1. React to the `content_observer_on_modifications` action in your theme or plugin
 
 == Frequently Asked Questions ==
@@ -62,11 +62,8 @@ Yes. `content_observer_add_modification( Modification::build( $id, 'my-type' )->
 
 == Upgrade Notice ==
 
-= 2.0.0 =
-The plugin was renamed from Content Observer to Changecast. The WP-CLI command is now `wp changecast` instead of `wp content-observer` - adjust cron jobs that call it.
-
 = 1.2.4 =
-Security release. A site without an API key no longer accepts requests from other sites - set a key under Changecast → Settings before updating if the field is empty.
+Security release. A site without an API key no longer accepts requests from other sites - set a key under Content Change Observer → Settings before updating if the field is empty.
 
 == Changelog ==
 

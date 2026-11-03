@@ -9,14 +9,14 @@
     "email": "webmaster@palasthotel.de",
     "url": "https://palasthotel.de"
   },
-  "repository": "git+https://github.com/palasthotel/wp-changecast.git",
+  "repository": "git+https://github.com/palasthotel/wp-palasthotel-content-change-observer.git",
   "bugs": {
-    "url": "https://github.com/palasthotel/wp-changecast/issues"
+    "url": "https://github.com/palasthotel/wp-palasthotel-content-change-observer/issues"
   },
   "scripts": {
     "watch": "wp-scripts start --config webpack.config.js",
     "build": "wp-scripts build --config webpack.config.js",
-    "pack": "SLUG=changecast bash ../github-workflows/wp-plugin/bin/pack.sh",
+    "pack": "SLUG=palasthotel-content-change-observer bash ../github-workflows/wp-plugin/bin/pack.sh",
     "lint": "tsc --noEmit"
   },
   "devDependencies": {

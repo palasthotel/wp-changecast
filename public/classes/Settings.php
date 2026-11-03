@@ -29,9 +29,9 @@ class Settings extends Component {
 		}
 		printf(
 			'<div class="notice notice-warning"><p>%s <a href="%s">%s</a></p></div>',
-			esc_html__( 'Changecast: No API key is set, so connected sites cannot reach this site.', 'changecast' ),
+			esc_html__( 'Content Change Observer: No API key is set, so connected sites cannot reach this site.', 'palasthotel-content-change-observer' ),
 			esc_url( admin_url( 'admin.php?page=' . Plugin::SETTINGS_PAGE ) ),
-			esc_html__( 'Set an API key', 'changecast' )
+			esc_html__( 'Set an API key', 'palasthotel-content-change-observer' )
 		);
 	}
 
@@ -72,8 +72,8 @@ class Settings extends Component {
 	 */
 	public function add_plugin_page() {
 		add_menu_page(
-			"Changecast",
-			"Changecast",
+			"Content Change Observer",
+			"Content Change Observer",
 			"manage_options",
 			Plugin::DOMAIN,
 			'',
@@ -81,7 +81,7 @@ class Settings extends Component {
 		);
 		add_submenu_page(
 			Plugin::DOMAIN,
-			'Changecast',
+			'Content Change Observer',
 			'Modifications',
 			'manage_options',
 			Plugin::MODIFICATIONS_PAGE,
@@ -92,7 +92,7 @@ class Settings extends Component {
 		);
 		add_submenu_page(
 			Plugin::DOMAIN,
-			'Changecast',
+			'Content Change Observer',
 			'Manage',
 			'manage_options',
 			Plugin::MANAGE_PAGE,
@@ -103,7 +103,7 @@ class Settings extends Component {
 		);
 		add_submenu_page(
 			Plugin::DOMAIN,
-			'Settings « Changecast',
+			'Settings « Content Change Observer',
 			'Settings',
 			'manage_options',
 			Plugin::SETTINGS_PAGE,
@@ -118,7 +118,7 @@ class Settings extends Component {
 	public function create_admin_page() {
 		?>
         <div class="wrap">
-            <h1>Settings « Changecast</h1>
+            <h1>Settings « Content Change Observer</h1>
             <form method="post" action="options.php">
 				<?php
 				settings_fields( Plugin::DOMAIN );
