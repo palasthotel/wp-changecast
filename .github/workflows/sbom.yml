@@ -22,7 +22,7 @@ jobs:
     permissions:
       contents: write
     with:
-      slug: changecast
+      slug: palasthotel-content-change-observer
       build-command: npm ci && npm run build
       version: ${{ github.event.inputs.version }}
 

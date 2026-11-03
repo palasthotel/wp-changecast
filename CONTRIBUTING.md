@@ -62,8 +62,8 @@ npm run build                     # → public/dist/
 npx wp-env start                  # http://localhost:8888, admin / password
 ```
 
-`npm run pack` stages the payload in `build/changecast/` and zips it to
-`changecast.zip` — the same payload the release deploys. It runs the shared script
+`npm run pack` stages the payload in `build/palasthotel-content-change-observer/` and zips it to
+`palasthotel-content-change-observer.zip` — the same payload the release deploys. It runs the shared script
 from [palasthotel/github-workflows](https://github.com/palasthotel/github-workflows),
 which has to be checked out next to this repository, and needs `composer`, because the
 packed copy gets its autoloader written there. Run `npm run build` first.

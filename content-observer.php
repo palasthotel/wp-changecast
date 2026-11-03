@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name:       Changecast - DEV
- * Plugin URI:        https://github.com/palasthotel/wp-changecast
+ * Plugin Name:       Palasthotel Content Change Observer - DEV
+ * Plugin URI:        https://github.com/palasthotel/wp-palasthotel-content-change-observer
  * Description:       Development wrapper. Loads the plugin from public/, which is what ships to wordpress.org. Do not deploy this file.
  * Version:           0.0.0-dev
  * Requires at least: 6.0
@@ -11,7 +11,7 @@
  * Author URI:        https://palasthotel.de
  * License:           GPL-3.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain:       changecast
+ * Text Domain:       palasthotel-content-change-observer
  */
 
 defined( 'ABSPATH' ) || exit;

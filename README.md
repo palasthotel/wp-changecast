@@ -1,7 +1,6 @@
-# Changecast (WordPress-Plugin)
+# Palasthotel Content Change Observer (WordPress-Plugin)
 
-Formerly *Content Observer*. Since 2.0.0 the WP-CLI command is `wp changecast` instead
-of `wp content-observer` - adjust your cron jobs.
+Formerly *Content Observer*; in WordPress the menu is called *Content Change Observer*.
 
 Efficiently observe content changes between WordPress instances. One site records what
 changed - posts, deleted posts, or anything a theme or plugin reports - and the sites
@@ -54,17 +53,17 @@ The examples use fictional sites: a *City Portal* that observes *news.example.co
   choose), `type` (`create`, `update`, `delete`) and the time of the change. Saving and
   deleting posts records modifications automatically.
 
-Both sites have the plugin and an API key (Changecast → Settings). Under
-Changecast → Manage the sites are connected; the connection exchanges the keys.
+Both sites have the plugin and an API key (Content Change Observer → Settings). Under
+Content Change Observer → Manage the sites are connected; the connection exchanges the keys.
 
 ![Manage page with the sites observing this one and the sites it observes](assets/screenshot-2.png)
 
 ## How changes travel
 
 - **notify** (observable → observer): sends new modifications to every observer, hourly
-  by cron or with `wp changecast notify`.
+  by cron or with `wp content-observer notify`.
 - **fetch** (observer → observable): asks the observable for its new modifications,
-  with `wp changecast fetch` or the Fetch button.
+  with `wp content-observer fetch` or the Fetch button.
 - **apply** (on the observer): runs the hooks below for every modification since the
   last run, hourly by cron or with the Apply button.
 
@@ -104,11 +103,11 @@ content_observer_add_modification(
 ## WP-CLI
 
 ```sh
-wp changecast ping
-wp changecast connect
-wp changecast notify
-wp changecast fetch
-wp changecast modifications
+wp content-observer ping
+wp content-observer connect
+wp content-observer notify
+wp content-observer fetch
+wp content-observer modifications
 ```
 
 ## Repository layout
