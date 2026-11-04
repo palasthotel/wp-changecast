@@ -5,7 +5,7 @@ Tags: sync, multisite, content, developer, wp-cli
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.2.4
+Stable tag: 2.0.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -66,6 +66,16 @@ Yes. `content_observer_add_modification( Modification::build( $id, 'my-type' )->
 Security release. A site without an API key no longer accepts requests from other sites - set a key under Content Change Observer → Settings before updating if the field is empty.
 
 == Changelog ==
+
+= 2.0.0 =
+**⚠ BREAKING CHANGES**
+* the plugin folder is palasthotel-content-change-observer instead of content-observer. WordPress treats it as a new plugin: install it, deactivate and delete the old one, then activate the new one. Settings, connected sites and modifications stay, as options and tables keep their names.
+
+**Features**
+* rename the plugin to Palasthotel Content Change Observer (c40e088)
+
+**Bug Fixes**
+* show log notices only on the plugin's own admin pages (5acb3b4)
 
 = 1.2.4 =
 **Bug Fixes**

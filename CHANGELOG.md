@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/palasthotel/wp-palasthotel-content-change-observer/compare/v1.2.4...v2.0.0) (2026-11-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* the plugin folder is palasthotel-content-change-observer instead of content-observer. WordPress treats it as a new plugin: install it, deactivate and delete the old one, then activate the new one. Settings, connected sites and modifications stay, as options and tables keep their names.
+
+### Features
+
+* rename the plugin to Palasthotel Content Change Observer ([c40e088](https://github.com/palasthotel/wp-palasthotel-content-change-observer/commit/c40e088829f44a4d79a7e321a33440f3ea35f7fd))
+
+
+### Bug Fixes
+
+* show log notices only on the plugin's own admin pages ([5acb3b4](https://github.com/palasthotel/wp-palasthotel-content-change-observer/commit/5acb3b4ef5365fd787d383706c56377d97c9cbac))
+
 ## [1.2.4](https://github.com/palasthotel/wp-content-observer/compare/v1.2.3...v1.2.4) (2026-10-14)
 
 

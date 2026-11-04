@@ -4,7 +4,7 @@
  * Plugin Name: Palasthotel Content Change Observer
  * Plugin URI: https://github.com/palasthotel/wp-palasthotel-content-change-observer
  * Description: Efficiently observe content changes between WordPress instances.
- * Version: 1.2.4
+ * Version: 2.0.0
  * Requires at least: 6.0
  * Requires PHP: 8.0
  * Author: Palasthotel
